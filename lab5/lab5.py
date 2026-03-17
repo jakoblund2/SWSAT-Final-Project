@@ -9,6 +9,9 @@ You must:
 
 import json
 from datetime import datetime
+from pathlib import Path
+
+from backend.database.sqlite import save_flight_plan
 
 
 def parse_time(time_text):
@@ -317,7 +320,14 @@ def main():
     with open("lab5/flight_plan.json", "w") as file:
         json.dump(flight_plan, file, indent=2)
 
+    flight_plan_id = save_flight_plan(
+        flight_plan,
+        db_path=ROOT_DIR / "backend" / "data" / "flight_plan.db",
+        source_json_path="lab5/flight_plan.json",
+    )
+
     print("Flight plan generated.")
+    print("Saved to SQLite with flight_plan_id:", flight_plan_id)
     print_pass_summary(flight_plan)
 
 

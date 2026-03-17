@@ -1,0 +1,378 @@
+{
+  "selected_passes": [
+    {
+      "pass_id": "M60",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T00:02:00",
+      "end_time": "2026-03-02T00:11:00",
+      "downlink_mb": 450,
+      "priority_score": 10
+    },
+    {
+      "pass_id": "M38",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T04:04:00",
+      "end_time": "2026-03-02T04:17:00",
+      "downlink_mb": 150,
+      "priority_score": 10
+    },
+    {
+      "pass_id": "M56",
+      "station_id": "GS3",
+      "start_time": "2026-03-02T16:20:00",
+      "end_time": "2026-03-02T16:28:00",
+      "downlink_mb": 150,
+      "priority_score": 10
+    },
+    {
+      "pass_id": "M21",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T18:35:00",
+      "end_time": "2026-03-02T18:51:00",
+      "downlink_mb": 350,
+      "priority_score": 10
+    },
+    {
+      "pass_id": "M58",
+      "station_id": "GS3",
+      "start_time": "2026-03-02T20:05:00",
+      "end_time": "2026-03-02T20:15:00",
+      "downlink_mb": 200,
+      "priority_score": 10
+    },
+    {
+      "pass_id": "M59",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T22:15:00",
+      "end_time": "2026-03-02T22:29:00",
+      "downlink_mb": 200,
+      "priority_score": 10
+    },
+    {
+      "pass_id": "M25",
+      "station_id": "GS2",
+      "start_time": "2026-03-02T02:29:00",
+      "end_time": "2026-03-02T02:45:00",
+      "downlink_mb": 350,
+      "priority_score": 9
+    },
+    {
+      "pass_id": "M04",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T08:14:00",
+      "end_time": "2026-03-02T08:30:00",
+      "downlink_mb": 150,
+      "priority_score": 9
+    },
+    {
+      "pass_id": "M28",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T08:16:00",
+      "end_time": "2026-03-02T08:32:00",
+      "downlink_mb": 250,
+      "priority_score": 9
+    },
+    {
+      "pass_id": "M09",
+      "station_id": "GS2",
+      "start_time": "2026-03-02T18:16:00",
+      "end_time": "2026-03-02T18:24:00",
+      "downlink_mb": 500,
+      "priority_score": 9
+    },
+    {
+      "pass_id": "M61",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T06:10:00",
+      "end_time": "2026-03-02T06:24:00",
+      "downlink_mb": 300,
+      "priority_score": 8
+    },
+    {
+      "pass_id": "M62",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T06:10:00",
+      "end_time": "2026-03-02T06:22:00",
+      "downlink_mb": 250,
+      "priority_score": 8
+    },
+    {
+      "pass_id": "M05",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T10:34:00",
+      "end_time": "2026-03-02T10:48:00",
+      "downlink_mb": 300,
+      "priority_score": 8
+    },
+    {
+      "pass_id": "M24",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T00:10:00",
+      "end_time": "2026-03-02T00:24:00",
+      "downlink_mb": 200,
+      "priority_score": 7
+    },
+    {
+      "pass_id": "M53",
+      "station_id": "GS2",
+      "start_time": "2026-03-02T10:16:00",
+      "end_time": "2026-03-02T10:31:00",
+      "downlink_mb": 350,
+      "priority_score": 7
+    },
+    {
+      "pass_id": "M06",
+      "station_id": "GS3",
+      "start_time": "2026-03-02T12:17:00",
+      "end_time": "2026-03-02T12:25:00",
+      "downlink_mb": 250,
+      "priority_score": 7
+    },
+    {
+      "pass_id": "M19",
+      "station_id": "GS3",
+      "start_time": "2026-03-02T14:20:00",
+      "end_time": "2026-03-02T14:31:00",
+      "downlink_mb": 500,
+      "priority_score": 7
+    },
+    {
+      "pass_id": "M36",
+      "station_id": "GS3",
+      "start_time": "2026-03-02T00:12:00",
+      "end_time": "2026-03-02T00:24:00",
+      "downlink_mb": 450,
+      "priority_score": 6
+    },
+    {
+      "pass_id": "M13",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T02:24:00",
+      "end_time": "2026-03-02T02:36:00",
+      "downlink_mb": 500,
+      "priority_score": 6
+    },
+    {
+      "pass_id": "M26",
+      "station_id": "GS1",
+      "start_time": "2026-03-02T04:07:00",
+      "end_time": "2026-03-02T04:23:00",
+      "downlink_mb": 350,
+      "priority_score": 6
+    }
+  ],
+  "rejected_passes": [
+    {
+      "pass_id": "M16",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS1, antenna_limit=2, conflicting_passes=M04, M28"
+    },
+    {
+      "pass_id": "M34",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS3, antenna_limit=1, conflicting_passes=M58"
+    },
+    {
+      "pass_id": "M27",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS1, antenna_limit=2, conflicting_passes=M61, M62"
+    },
+    {
+      "pass_id": "M43",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS3, antenna_limit=1, conflicting_passes=M19"
+    },
+    {
+      "pass_id": "M07",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M08",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M44",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M14",
+      "rejection_reason": "SPACING_VIOLATION",
+      "details": "station_id=GS1, required_spacing_minutes=3, conflicting_pass_id=M26, actual_gap_minutes=0.0"
+    },
+    {
+      "pass_id": "M41",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS2, antenna_limit=1, conflicting_passes=M53"
+    },
+    {
+      "pass_id": "M10",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M48",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M12",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS3, antenna_limit=1, conflicting_passes=M36"
+    },
+    {
+      "pass_id": "M01",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M37",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS2, antenna_limit=1, conflicting_passes=M25"
+    },
+    {
+      "pass_id": "M50",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M15",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M51",
+      "rejection_reason": "SPACING_VIOLATION",
+      "details": "station_id=GS1, required_spacing_minutes=3, conflicting_pass_id=M61, actual_gap_minutes=2.0"
+    },
+    {
+      "pass_id": "M18",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M54",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M32",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M46",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M35",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M29",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M42",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M20",
+      "rejection_reason": "SPACING_VIOLATION",
+      "details": "station_id=GS3, required_spacing_minutes=4, conflicting_pass_id=M56, actual_gap_minutes=1.0"
+    },
+    {
+      "pass_id": "M22",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M47",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M02",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS1, antenna_limit=2, conflicting_passes=M38, M26"
+    },
+    {
+      "pass_id": "M39",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M03",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M31",
+      "rejection_reason": "CAPACITY_CONFLICT",
+      "details": "station_id=GS3, antenna_limit=1, conflicting_passes=M19"
+    },
+    {
+      "pass_id": "M33",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M45",
+      "rejection_reason": "SPACING_VIOLATION",
+      "details": "station_id=GS2, required_spacing_minutes=5, conflicting_pass_id=M09, actual_gap_minutes=2.0"
+    },
+    {
+      "pass_id": "M23",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M49",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M40",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M52",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M17",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M30",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M55",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M57",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    },
+    {
+      "pass_id": "M11",
+      "rejection_reason": "MAX_PASSES_LIMIT",
+      "details": "selected_pass_count=20, max_passes_per_day=20"
+    }
+  ],
+  "total_downlink_mb": 6200,
+  "total_selected_count": 20
+}
