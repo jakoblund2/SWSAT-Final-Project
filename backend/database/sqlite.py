@@ -24,6 +24,7 @@ def _create_tables():
         """
         CREATE TABLE IF NOT EXISTS selected_passes (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            schedule_id INTEGER NOT NULL,
             pass_id TEXT NOT NULL,
             station_id TEXT NOT NULL,
             start_time TEXT NOT NULL,
@@ -38,6 +39,7 @@ def _create_tables():
         """
         CREATE TABLE IF NOT EXISTS rejected_passes (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            schedule_id INTEGER NOT NULL,
             pass_id TEXT NOT NULL,
             rejection_reason TEXT NOT NULL,
             details TEXT
@@ -48,11 +50,12 @@ def _create_tables():
     connection.close()
 
 # Insert selected passes into the database
-def _insert_into_selected_passes():
+def _insert_into_selected_passes(schedule_id):
     connection = get_db_connection()
     flight_plan = _import_flightplan_from_json()
     values = [
         (
+            schedule_id,
             selected_pass["pass_id"],
             selected_pass["station_id"],
             selected_pass["start_time"],
@@ -64,8 +67,8 @@ def _insert_into_selected_passes():
     ]
     connection.executemany(
         """
-        INSERT INTO selected_passes (pass_id, station_id, start_time, end_time, downlink_mb, priority_score)
-        VALUES (?, ?, ?, ?, ?, ?)
+        INSERT INTO selected_passes (schedule_id, pass_id, station_id, start_time, end_time, downlink_mb, priority_score)
+        VALUES (?, ?, ?, ?, ?, ?, ?)
         """,
         values,
     )
@@ -73,11 +76,12 @@ def _insert_into_selected_passes():
     connection.close()
 
 # Insert rejected passes into the database
-def _insert_into_rejected_passes():
+def _insert_into_rejected_passes(schedule_id):
     connection = get_db_connection()
     flight_plan = _import_flightplan_from_json()
     values = [
         (
+            schedule_id,
             rejected_pass["pass_id"],
             rejected_pass["rejection_reason"],
             rejected_pass["details"]
@@ -86,29 +90,29 @@ def _insert_into_rejected_passes():
     ]
     connection.executemany(
         """
-        INSERT INTO rejected_passes (pass_id, rejection_reason, details)
-        VALUES (?, ?, ?)
+        INSERT INTO rejected_passes (schedule_id, pass_id, rejection_reason, details)
+        VALUES (?, ?, ?, ?)
         """,
         values,
     )
     connection.commit()
     connection.close()
     
-def read_selectpass_from_id(id):
+def read_selectpass_from_schedule_id(schedule_id):
     connection = get_db_connection()
     selected_rows = connection.execute(
-        "SELECT * FROM selected_passes WHERE id = ?",
-        (id,)
+        "SELECT * FROM selected_passes WHERE schedule_id = ?",
+        (schedule_id,)
     ).fetchall()
     selected_passes = [dict(row) for row in selected_rows]
     connection.close()
     return selected_passes
 
-def read_rejectpass_from_id(id):
+def read_rejectpass_from_schedule_id(schedule_id):
     connection = get_db_connection()
     rejected_rows = connection.execute(
-        "SELECT * FROM rejected_passes WHERE id = ?",
-        (id,)
+        "SELECT * FROM rejected_passes WHERE schedule_id = ?",
+        (schedule_id,)
     ).fetchall()
     rejected_passes = [dict(row) for row in rejected_rows]
     connection.close()
@@ -120,19 +124,20 @@ def initialize_database():
     
 def run_schedule():
     _create_tables()
-    _insert_into_selected_passes()
-    _insert_into_rejected_passes()
+    next_id = get_max_schedule_id() + 1
+    _insert_into_selected_passes(next_id)
+    _insert_into_rejected_passes(next_id)
     
     
 # get the maximum ID from the selected_passes table to identify the latest schedule
-def get_max_id():
+def get_max_schedule_id():
     connection = get_db_connection()
     selected_max = connection.execute(
-        "SELECT MAX(id) FROM selected_passes"
+        "SELECT MAX(schedule_id) FROM selected_passes"
     ).fetchone()[0]
 
     rejected_max = connection.execute(
-        "SELECT MAX(id) FROM rejected_passes"
+        "SELECT MAX(schedule_id) FROM rejected_passes"
     ).fetchone()[0]
 
     if selected_max is None:
@@ -141,15 +146,15 @@ def get_max_id():
     if rejected_max is None:
         rejected_max = 0
 
-    max_id = max(selected_max, rejected_max)
+    max_schedule_id = max(selected_max, rejected_max)
     connection.close()
-    return max_id
+    return max_schedule_id
 
 # Get the latest schedule by fetching the maximum ID from the selected_passes table and retrieving the corresponding selected and rejected passes
 def get_latest_schedule():
-    max_id = get_max_id()
-    selected_passes = read_selectpass_from_id(max_id)
-    rejected_passes = read_rejectpass_from_id(max_id)
+    max_schedule_id = get_max_schedule_id()
+    selected_passes = read_selectpass_from_schedule_id(max_schedule_id)
+    rejected_passes = read_rejectpass_from_schedule_id(max_schedule_id)
 
     total_downlink_mb = 0
     for selected_pass in selected_passes:
@@ -164,9 +169,9 @@ def get_latest_schedule():
         "total_selected_count": total_selected_count
     }
 
-def get_specific_schedule(id):
-    selected_passes = read_selectpass_from_id(id)
-    rejected_passes = read_rejectpass_from_id(id)
+def get_specific_schedule(schedule_id):
+    selected_passes = read_selectpass_from_schedule_id(schedule_id)
+    rejected_passes = read_rejectpass_from_schedule_id(schedule_id)
 
     total_downlink_mb = 0
     for selected_pass in selected_passes:

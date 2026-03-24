@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.database.sqlite import (get_latest_schedule, read_rejectpass_from_id, initialize_database, get_specific_schedule, run_schedule)
+from backend.database.sqlite import (get_latest_schedule, read_rejectpass_from_schedule_id, initialize_database, get_specific_schedule, run_schedule)
 
 app = FastAPI()
 
@@ -22,15 +22,15 @@ def read_schedule():
     return {"schedule": schedule}
 
 # GET specific schedule based on id
-@app.get("/schedule/{id}")
-def read_specific_schedule(id: int):
-    schedule = get_specific_schedule(id)
+@app.get("/schedule/{schedule_id}")
+def read_specific_schedule(schedule_id: int):
+    schedule = get_specific_schedule(schedule_id)
     return {"schedule": schedule}
 
 # get rejected passes based on id
-@app.get("/rejected-passes/{id}")
-def get_rejected_passes(id: int):
+@app.get("/rejected-passes/{schedule_id}")
+def get_rejected_passes(schedule_id: int):
     
-    rejected_passes = read_rejectpass_from_id(id)
+    rejected_passes = read_rejectpass_from_schedule_id(schedule_id)
     return {"rejected_passes": rejected_passes}
 
