@@ -77,7 +77,12 @@ def schedule_passes(passes):
 
     # TODO:
     # 1. Sort passes based on your decision rule
-    scheduled = sorted(passes, key=lambda p: duration_minutes(parse_time(p["start_time"]), parse_time(p["end_time"])))
+    # rule 1: shortest duration first
+    # rule 2: earliest start time first
+    scheduled = sorted(passes, key=lambda p: (
+        duration_minutes(parse_time(p["start_time"]), parse_time(p["end_time"])),
+        parse_time(p["start_time"])
+    ))
     non_overlapping = []
     # 2. Select non-overlapping passes
     for p in scheduled:
