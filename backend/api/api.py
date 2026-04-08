@@ -3,17 +3,11 @@ from backend.database.sqlite import (get_latest_schedule, read_rejectpass_from_s
 
 app = FastAPI()
 
-# Define your API endpoints here
-
-
-
-
 # POST
 @app.post("/schedule/run")
 def run_schedule_endpoint():
     run_schedule()
     return {"message": "schedule ran"}
-
 
 # GET schedule
 @app.get("/schedule")
