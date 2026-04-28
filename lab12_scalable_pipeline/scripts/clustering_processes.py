@@ -9,14 +9,15 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import numpy as np
 from PIL import ImageStat
 from sklearn.cluster import KMeans
-from backend.eo_enhancer import enhance_image
+from lab12_scalable_pipeline.backend.eo_enhancer import enhance_image
 
-METADATA_PATH = "storage/eo_metadata.json"
-LOG_PATH = "logs/pipeline.log"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+METADATA_PATH = os.path.join(BASE_DIR, "storage", "eo_metadata.json")
+LOG_PATH = os.path.join(BASE_DIR, "logs", "pipeline.log")
 
 
 def setup_logging():
-    os.makedirs("logs", exist_ok=True)
+    os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
     logging.basicConfig(
         level=logging.INFO,
         format="%(message)s",
@@ -41,11 +42,11 @@ def split_into_batches(data, batch_size):
 
 
 def process_eo_product(item):
-    image_path = item["image_path"]
+    image_path = os.path.join(BASE_DIR, item["image_path"])
     eo_id = item["eo_product_id"]
-    enhanced_path = f"storage/object_store/enhanced/{eo_id}-enhanced.png"
+    enhanced_path = os.path.join(BASE_DIR, "storage", "object_store", "enhanced", f"{eo_id}-enhanced.png")
 
-    os.makedirs("storage/object_store/enhanced", exist_ok=True)
+    os.makedirs(os.path.dirname(enhanced_path), exist_ok=True)
     enhanced = enhance_image(image_path, enhanced_path)
 
     stat = ImageStat.Stat(enhanced)
