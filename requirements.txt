@@ -2,3 +2,8 @@ fastapi
 uvicorn
 Flask
 pillow
+numpy
+matplotlib
+scipy
+seaborn
+scikit-learn
