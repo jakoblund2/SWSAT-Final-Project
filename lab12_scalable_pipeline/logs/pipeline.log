@@ -4,238 +4,421 @@ EO-002 | score=0.1787 | visible=False | priority=3
 EO-003 | score=0.1625 | visible=False | priority=3
 EO-004 | score=0.159 | visible=False | priority=3
 EO-005 | score=0.2351 | visible=True | priority=3
-Batch 2
 EO-006 | score=0.2139 | visible=True | priority=3
 EO-007 | score=0.2035 | visible=True | priority=3
 EO-008 | score=0.3474 | visible=True | priority=2
 EO-009 | score=0.3313 | visible=True | priority=2
 EO-010 | score=0.3267 | visible=True | priority=2
-Batch 3
+Batch 2
 EO-011 | score=0.3276 | visible=True | priority=2
 EO-012 | score=0.3675 | visible=True | priority=2
 EO-013 | score=0.3551 | visible=True | priority=2
 EO-014 | score=0.348 | visible=True | priority=2
 EO-015 | score=0.2063 | visible=True | priority=3
-Batch 4
 EO-016 | score=0.1787 | visible=False | priority=3
 EO-017 | score=0.1625 | visible=False | priority=3
 EO-018 | score=0.159 | visible=False | priority=3
 EO-019 | score=0.2351 | visible=True | priority=3
 EO-020 | score=0.2139 | visible=True | priority=3
-Batch 5
+Batch 3
 EO-021 | score=0.2036 | visible=True | priority=3
 EO-022 | score=0.2063 | visible=True | priority=3
 EO-023 | score=0.1787 | visible=False | priority=3
 EO-024 | score=0.1625 | visible=False | priority=3
 EO-025 | score=0.159 | visible=False | priority=3
-Batch 6
 EO-026 | score=0.2351 | visible=True | priority=3
 EO-027 | score=0.2139 | visible=True | priority=3
 EO-028 | score=0.2039 | visible=True | priority=3
 EO-029 | score=0.3822 | visible=True | priority=2
 EO-030 | score=0.3575 | visible=True | priority=2
-Batch 7
+Batch 4
 EO-031 | score=0.3387 | visible=True | priority=2
 EO-032 | score=0.3203 | visible=True | priority=2
 EO-033 | score=0.4152 | visible=True | priority=1
 EO-034 | score=0.3934 | visible=True | priority=2
 EO-035 | score=0.383 | visible=True | priority=2
-Batch 8
 EO-036 | score=0.3973 | visible=True | priority=2
 EO-037 | score=0.3452 | visible=True | priority=2
 EO-038 | score=0.3306 | visible=True | priority=2
 EO-039 | score=0.3248 | visible=True | priority=2
 EO-040 | score=0.4331 | visible=True | priority=1
-Batch 9
+Batch 5
 EO-041 | score=0.4127 | visible=True | priority=1
 EO-042 | score=0.3949 | visible=True | priority=2
 EO-043 | score=0.2063 | visible=True | priority=3
 EO-044 | score=0.1787 | visible=False | priority=3
 EO-045 | score=0.1625 | visible=False | priority=3
-Batch 10
 EO-046 | score=0.159 | visible=False | priority=3
 EO-047 | score=0.2351 | visible=True | priority=3
 EO-048 | score=0.2139 | visible=True | priority=3
 EO-049 | score=0.2036 | visible=True | priority=3
 EO-050 | score=0.3486 | visible=True | priority=2
-Batch 11
+Batch 6
 EO-051 | score=0.3067 | visible=True | priority=2
 EO-052 | score=0.2882 | visible=True | priority=3
 EO-053 | score=0.2744 | visible=True | priority=3
 EO-054 | score=0.385 | visible=True | priority=2
 EO-055 | score=0.3631 | visible=True | priority=2
-Batch 12
 EO-056 | score=0.3469 | visible=True | priority=2
 EO-057 | score=0.3822 | visible=True | priority=2
 EO-058 | score=0.3575 | visible=True | priority=2
 EO-059 | score=0.3387 | visible=True | priority=2
 EO-060 | score=0.3203 | visible=True | priority=2
-Batch 13
+Batch 7
 EO-061 | score=0.4152 | visible=True | priority=1
 EO-062 | score=0.3934 | visible=True | priority=2
 EO-063 | score=0.383 | visible=True | priority=2
 EO-064 | score=0.2063 | visible=True | priority=3
 EO-065 | score=0.1787 | visible=False | priority=3
-Batch 14
 EO-066 | score=0.1625 | visible=False | priority=3
 EO-067 | score=0.159 | visible=False | priority=3
 EO-068 | score=0.2351 | visible=True | priority=3
 EO-069 | score=0.2139 | visible=True | priority=3
 EO-070 | score=0.2034 | visible=True | priority=3
-Batch 15
+Batch 8
 EO-071 | score=0.3973 | visible=True | priority=2
 EO-072 | score=0.3452 | visible=True | priority=2
 EO-073 | score=0.3306 | visible=True | priority=2
 EO-074 | score=0.3248 | visible=True | priority=2
 EO-075 | score=0.4331 | visible=True | priority=1
-Batch 16
 EO-076 | score=0.4127 | visible=True | priority=1
 EO-077 | score=0.3945 | visible=True | priority=2
 EO-078 | score=0.4171 | visible=True | priority=1
 EO-079 | score=0.3875 | visible=True | priority=2
 EO-080 | score=0.3651 | visible=True | priority=2
-Batch 17
+Batch 9
 EO-081 | score=0.3556 | visible=True | priority=2
 EO-082 | score=0.4439 | visible=True | priority=1
 EO-083 | score=0.4258 | visible=True | priority=1
 EO-084 | score=0.4179 | visible=True | priority=1
 EO-085 | score=0.2063 | visible=True | priority=3
-Batch 18
 EO-086 | score=0.1787 | visible=False | priority=3
 EO-087 | score=0.1625 | visible=False | priority=3
 EO-088 | score=0.159 | visible=False | priority=3
 EO-089 | score=0.2351 | visible=True | priority=3
 EO-090 | score=0.2139 | visible=True | priority=3
-Batch 19
+Batch 10
 EO-091 | score=0.2037 | visible=True | priority=3
 EO-092 | score=0.4425 | visible=True | priority=1
 EO-093 | score=0.4279 | visible=True | priority=1
 EO-094 | score=0.4146 | visible=True | priority=1
 EO-095 | score=0.3818 | visible=True | priority=2
-Batch 20
 EO-096 | score=0.4697 | visible=True | priority=1
 EO-097 | score=0.4458 | visible=True | priority=1
 EO-098 | score=0.4403 | visible=True | priority=1
 EO-099 | score=0.2063 | visible=True | priority=3
 EO-100 | score=0.1787 | visible=False | priority=3
-Batch 21
+Batch 11
 EO-101 | score=0.1625 | visible=False | priority=3
 EO-102 | score=0.159 | visible=False | priority=3
 EO-103 | score=0.2351 | visible=True | priority=3
 EO-104 | score=0.2139 | visible=True | priority=3
 EO-105 | score=0.2037 | visible=True | priority=3
-Batch 22
 EO-106 | score=0.3973 | visible=True | priority=2
 EO-107 | score=0.3452 | visible=True | priority=2
 EO-108 | score=0.3306 | visible=True | priority=2
 EO-109 | score=0.3248 | visible=True | priority=2
 EO-110 | score=0.4331 | visible=True | priority=1
-Batch 23
+Batch 12
 EO-111 | score=0.4127 | visible=True | priority=1
 EO-112 | score=0.3946 | visible=True | priority=2
 EO-113 | score=0.3973 | visible=True | priority=2
 EO-114 | score=0.3452 | visible=True | priority=2
 EO-115 | score=0.3306 | visible=True | priority=2
-Batch 24
 EO-116 | score=0.3248 | visible=True | priority=2
 EO-117 | score=0.4331 | visible=True | priority=1
 EO-118 | score=0.4127 | visible=True | priority=1
 EO-119 | score=0.3949 | visible=True | priority=2
 EO-120 | score=0.2063 | visible=True | priority=3
-Batch 25
+Batch 13
 EO-121 | score=0.1787 | visible=False | priority=3
 EO-122 | score=0.1625 | visible=False | priority=3
 EO-123 | score=0.159 | visible=False | priority=3
 EO-124 | score=0.2351 | visible=True | priority=3
 EO-125 | score=0.2139 | visible=True | priority=3
-Batch 26
 EO-126 | score=0.2036 | visible=True | priority=3
 EO-127 | score=0.4425 | visible=True | priority=1
 EO-128 | score=0.4279 | visible=True | priority=1
 EO-129 | score=0.4146 | visible=True | priority=1
 EO-130 | score=0.3818 | visible=True | priority=2
-Batch 27
+Batch 14
 EO-131 | score=0.4697 | visible=True | priority=1
 EO-132 | score=0.4458 | visible=True | priority=1
 EO-133 | score=0.4407 | visible=True | priority=1
 EO-134 | score=0.2063 | visible=True | priority=3
 EO-135 | score=0.1787 | visible=False | priority=3
-Batch 28
 EO-136 | score=0.1625 | visible=False | priority=3
 EO-137 | score=0.159 | visible=False | priority=3
 EO-138 | score=0.2351 | visible=True | priority=3
 EO-139 | score=0.2139 | visible=True | priority=3
 EO-140 | score=0.2044 | visible=True | priority=3
-Batch 29
+Batch 15
 EO-141 | score=0.3377 | visible=True | priority=2
 EO-142 | score=0.2996 | visible=True | priority=3
 EO-143 | score=0.2784 | visible=True | priority=3
 EO-144 | score=0.2771 | visible=True | priority=3
 EO-145 | score=0.3674 | visible=True | priority=2
-Batch 30
 EO-146 | score=0.3459 | visible=True | priority=2
 EO-147 | score=0.3382 | visible=True | priority=2
 EO-148 | score=0.2063 | visible=True | priority=3
 EO-149 | score=0.1787 | visible=False | priority=3
 EO-150 | score=0.1625 | visible=False | priority=3
-Batch 31
+Batch 16
 EO-151 | score=0.159 | visible=False | priority=3
 EO-152 | score=0.2351 | visible=True | priority=3
 EO-153 | score=0.2139 | visible=True | priority=3
 EO-154 | score=0.2041 | visible=True | priority=3
 EO-155 | score=0.3377 | visible=True | priority=2
-Batch 32
 EO-156 | score=0.2996 | visible=True | priority=3
 EO-157 | score=0.2784 | visible=True | priority=3
 EO-158 | score=0.2771 | visible=True | priority=3
 EO-159 | score=0.3674 | visible=True | priority=2
 EO-160 | score=0.3459 | visible=True | priority=2
-Batch 33
+Batch 17
 EO-161 | score=0.3386 | visible=True | priority=2
 EO-162 | score=0.3486 | visible=True | priority=2
 EO-163 | score=0.3067 | visible=True | priority=2
 EO-164 | score=0.2882 | visible=True | priority=3
 EO-165 | score=0.2744 | visible=True | priority=3
-Batch 34
 EO-166 | score=0.385 | visible=True | priority=2
 EO-167 | score=0.3631 | visible=True | priority=2
 EO-168 | score=0.3463 | visible=True | priority=2
 EO-169 | score=0.3377 | visible=True | priority=2
 EO-170 | score=0.2996 | visible=True | priority=3
-Batch 35
+Batch 18
 EO-171 | score=0.2784 | visible=True | priority=3
 EO-172 | score=0.2771 | visible=True | priority=3
 EO-173 | score=0.3674 | visible=True | priority=2
 EO-174 | score=0.3459 | visible=True | priority=2
 EO-175 | score=0.3385 | visible=True | priority=2
-Batch 36
 EO-176 | score=0.4425 | visible=True | priority=1
 EO-177 | score=0.4279 | visible=True | priority=1
 EO-178 | score=0.4146 | visible=True | priority=1
 EO-179 | score=0.3818 | visible=True | priority=2
 EO-180 | score=0.4697 | visible=True | priority=1
-Batch 37
+Batch 19
 EO-181 | score=0.4458 | visible=True | priority=1
 EO-182 | score=0.4414 | visible=True | priority=1
 EO-183 | score=0.2063 | visible=True | priority=3
 EO-184 | score=0.1787 | visible=False | priority=3
 EO-185 | score=0.1625 | visible=False | priority=3
-Batch 38
 EO-186 | score=0.159 | visible=False | priority=3
 EO-187 | score=0.2351 | visible=True | priority=3
 EO-188 | score=0.2139 | visible=True | priority=3
 EO-189 | score=0.2038 | visible=True | priority=3
 EO-190 | score=0.3486 | visible=True | priority=2
-Batch 39
+Batch 20
 EO-191 | score=0.3067 | visible=True | priority=2
 EO-192 | score=0.2882 | visible=True | priority=3
 EO-193 | score=0.2744 | visible=True | priority=3
 EO-194 | score=0.385 | visible=True | priority=2
 EO-195 | score=0.3631 | visible=True | priority=2
-Batch 40
 EO-196 | score=0.3463 | visible=True | priority=2
 EO-197 | score=0.3474 | visible=True | priority=2
 EO-198 | score=0.3313 | visible=True | priority=2
 EO-199 | score=0.3267 | visible=True | priority=2
 EO-200 | score=0.3276 | visible=True | priority=2
 Batch processing completed.
+
+Clustering with k=3
+EO-001 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-002 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-003 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-004 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-005 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-006 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-007 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-008 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-009 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-010 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-011 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-012 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-013 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-014 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-015 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-016 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-017 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-018 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-019 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-020 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-021 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-022 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-023 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-024 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-025 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-026 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-027 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-028 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-029 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-030 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-031 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-032 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-033 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-034 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-035 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-036 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-037 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-038 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-039 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-040 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-041 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-042 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-043 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-044 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-045 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-046 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-047 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-048 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-049 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-050 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-051 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-052 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-053 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-054 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-055 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-056 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-057 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-058 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-059 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-060 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-061 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-062 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-063 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-064 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-065 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-066 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-067 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-068 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-069 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-070 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-071 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-072 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-073 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-074 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-075 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-076 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-077 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-078 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-079 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-080 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-081 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-082 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-083 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-084 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-085 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-086 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-087 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-088 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-089 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-090 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-091 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-092 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-093 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-094 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-095 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-096 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-097 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-098 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-099 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-100 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-101 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-102 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-103 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-104 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-105 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-106 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-107 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-108 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-109 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-110 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-111 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-112 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-113 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-114 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-115 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-116 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-117 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-118 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-119 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-120 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-121 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-122 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-123 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-124 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-125 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-126 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-127 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-128 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-129 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-130 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-131 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-132 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-133 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-134 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-135 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-136 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-137 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-138 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-139 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-140 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-141 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-142 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-143 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-144 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-145 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-146 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-147 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-148 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-149 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-150 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-151 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-152 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-153 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-154 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-155 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-156 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-157 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-158 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-159 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-160 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-161 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-162 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-163 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-164 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-165 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-166 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-167 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-168 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-169 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-170 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-171 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-172 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-173 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-174 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-175 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-176 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-177 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-178 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-179 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-180 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-181 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-182 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-183 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-184 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-185 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-186 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-187 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-188 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-189 | cluster=1 | cluster_center=0.1942 | cluster_meaning=low_quality
+EO-190 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-191 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-192 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-193 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-194 | cluster=0 | cluster_center=0.4145 | cluster_meaning=high_quality
+EO-195 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-196 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-197 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-198 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-199 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+EO-200 | cluster=2 | cluster_center=0.3282 | cluster_meaning=medium_quality
+Clustering complete.

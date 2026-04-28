@@ -19,8 +19,18 @@ def run_clustering(data, k):
     features = np.array([[item["brightness"], item["contrast"]] for item in data])
     kmeans = KMeans(n_clusters=k, random_state=42)
     labels = kmeans.fit_predict(features)
+    centers = kmeans.cluster_centers_
+
+    center_scores = [(c[0] + c[1]) / 2 for c in centers]
+    sorted_ids = sorted(range(k), key=lambda i: center_scores[i])
+    meanings = ["low_quality", "medium_quality", "high_quality"]
+    meaning_map = {sorted_ids[i]: meanings[i] for i in range(k)}
+
     for i, item in enumerate(data):
-        item["cluster"] = int(labels[i])
+        cid = int(labels[i])
+        item["cluster"] = cid
+        item["cluster_center"] = round(center_scores[cid], 4)
+        item["cluster_meaning"] = meaning_map[cid]
     return data
 
 

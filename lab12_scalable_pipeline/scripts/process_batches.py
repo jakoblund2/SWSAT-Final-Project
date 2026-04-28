@@ -4,6 +4,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from PIL import ImageStat
 from backend.eo_enhancer import enhance_image
+from clustering_processes import run_clustering
 
 def load_metadata(metadata_path):
     """
@@ -146,12 +147,14 @@ def run_pipeline():
     """
 
     metadata_path = "storage/eo_metadata.json"
+    results_path = "storage/eo_results_clustering.json"
+    k = 3
 
     # 1. Load all EO products
     data = load_metadata(metadata_path)
 
     # 2. Choose batch size
-    batch_size = 5
+    batch_size = 10
 
     # 3. Split into batches
     batches = split_into_batches(data, batch_size)
@@ -165,12 +168,33 @@ def run_pipeline():
             processed_batch = process_batch(batch, batch_number, log_file)
             all_results.extend(processed_batch)
 
-        # 5. Save updated metadata
-        # TODO: save all_results back to metadata file
-        with open(metadata_path, "w") as f:
-            json.dump(all_results, f, indent=2)
-
         print("Batch processing completed.")
         log_file.write("Batch processing completed.\n")
+
+        # 5. Run K-means clustering
+        print(f"\nClustering with k={k}")
+        log_file.write(f"\nClustering with k={k}\n")
+
+        all_results = run_clustering(all_results, k)
+
+        for item in all_results:
+            line = (
+                f"{item['eo_product_id']} | "
+                f"cluster={item['cluster']} | "
+                f"cluster_center={item['cluster_center']} | "
+                f"cluster_meaning={item['cluster_meaning']}"
+            )
+            print(line)
+            log_file.write(line + "\n")
+
+        print("Clustering complete.")
+        log_file.write("Clustering complete.\n")
+
+        # 6. Save final results with clustering fields
+        with open(results_path, "w") as f:
+            json.dump(all_results, f, indent=2)
+
+        print(f"Results saved to {results_path}")
+
 
 run_pipeline()
