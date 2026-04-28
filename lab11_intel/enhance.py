@@ -4,17 +4,19 @@ from PIL import Image, ImageEnhance, ImageFilter
 
 # TODO: load data
 
-IMAGE_DIR = Path("lab11_intel/images")
+IMAGE_DIR = Path(__file__).parent / "Input_Image"
 
 # TODO: LOAD IMAGE
-image = Image.open(IMAGE_DIR / "EO-S1A-2026-03-24-001.png")
+image = Image.open(IMAGE_DIR / "EO-002.png")
 
 # TODO: ENHANCE IMAGE
-enhancer = ImageEnhance.Brightness(image)
-image = enhancer.enhance(1.5)
+image = ImageEnhance.Contrast(image).enhance(3.0)
+
+# TODO: FILTER IMAGE
+image = image.filter(ImageFilter.FIND_EDGES)
 
 # TODO: SAVE IMAGE
-image.save(IMAGE_DIR / "EO-S1A-2026-03-24-001_enhanced.png")
+image.save(IMAGE_DIR / "EO-002_enhanced.png")
 
 
 
