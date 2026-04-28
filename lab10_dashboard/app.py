@@ -26,6 +26,9 @@ def load_catalog():
     # Open each file
     # Load JSON
     # Append to products list
+    for file_path in sorted(CATALOG_DIR.glob("*.catalog.json")):
+        with open(file_path, "r", encoding="utf-8") as f:
+            products.append(json.load(f))
     
 
     return products
@@ -124,7 +127,7 @@ def serve_image(eo_product_id):
 
     # TODO:
     # Get archive_path from product
-            archive_path = ARCHIVE_DIR / product["file_name"]
+            archive_path = Path(product["archive_path"])
     # TODO:
     # Convert to Path and check if file exists
             if archive_path.is_file():
