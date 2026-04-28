@@ -1,6 +1,9 @@
 import json
 import os
-from PIL import Image, ImageEnhance, ImageStat
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from PIL import ImageStat
+from backend.eo_enhancer import enhance_image
 
 def load_metadata(metadata_path):
     """
@@ -32,13 +35,6 @@ def split_into_batches(data, batch_size):
 
     return batches
 
-def enhance_image(image_path, enhanced_path):
-    image = Image.open(image_path).convert("L")
-    image = ImageEnhance.Contrast(image).enhance(3.0)
-    image.save(enhanced_path)
-    return image
-
-
 def process_eo_product(item):
     """
     Process one EO product inside a batch.
@@ -55,7 +51,6 @@ def process_eo_product(item):
     # TODO: call enhancement function (e.g., your ML logic from Lab11)
     # example idea:
     # enhance_image(image_path, enhanced_path)
-    os.makedirs("storage/object_store/enhanced", exist_ok=True)
     enhanced = enhance_image(image_path, enhanced_path)
 
 
@@ -110,13 +105,14 @@ def assign_priority(item):
 
     return item
 
-def process_batch(batch, batch_number):
+def process_batch(batch, batch_number, log_file):
     """
     Process all EO products inside one batch.
     """
 
     # TODO: print or log batch number
     print(f"Batch {batch_number}")
+    log_file.write(f"Batch {batch_number}\n")
 
     processed_batch = []
 
@@ -129,13 +125,15 @@ def process_batch(batch, batch_number):
 
         # TODO: log result for this EO product
         # Example format:
-        # EO-001 | score=... | priority=...
-
-        print(
+        # EO-001 | score=... | visible=... | priority=...
+        line = (
             f"{item['eo_product_id']} | "
-            f"score={item['quality_score']} | "
+            f"score={round(item['quality_score'], 4)} | "
+            f"visible={item['is_visible']} | "
             f"priority={item['priority']}"
         )
+        print(line)
+        log_file.write(line + "\n")
 
         # TODO: add processed item to batch result
         processed_batch.append(item)
@@ -160,15 +158,19 @@ def run_pipeline():
 
     all_results = []
 
-    # 4. Process batch by batch
-    for batch_number, batch in enumerate(batches, start=1):
-        processed_batch = process_batch(batch, batch_number)
-        all_results.extend(processed_batch)
+    with open("logs/pipeline.log", "w") as log_file:
 
-    # 5. Save updated metadata
-    # TODO: save all_results back to metadata file
-    with open(metadata_path, "w") as f:
-        json.dump(all_results, f, indent=2)
+        # 4. Process batch by batch
+        for batch_number, batch in enumerate(batches, start=1):
+            processed_batch = process_batch(batch, batch_number, log_file)
+            all_results.extend(processed_batch)
 
-    print("Batch processing completed.")
+        # 5. Save updated metadata
+        # TODO: save all_results back to metadata file
+        with open(metadata_path, "w") as f:
+            json.dump(all_results, f, indent=2)
 
+        print("Batch processing completed.")
+        log_file.write("Batch processing completed.\n")
+
+run_pipeline()

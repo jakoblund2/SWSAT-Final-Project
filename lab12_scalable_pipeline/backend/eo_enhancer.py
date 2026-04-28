@@ -1,7 +1,8 @@
-import json
-from pathlib import Path
-from PIL import Image, ImageEnhance, ImageFilter
+from PIL import Image, ImageEnhance
 
-# TODO: load data
 
-IMAGE_DIR = Path(__file__).parent / "Input_Image"
+def enhance_image(image_path, enhanced_path):
+    image = Image.open(image_path).convert("L")
+    image = ImageEnhance.Contrast(image).enhance(3.0)
+    image.save(enhanced_path)
+    return image
