@@ -1,13 +1,16 @@
-import argparse
+﻿import argparse
 import json
 import os
 
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
 from sklearn.cluster import KMeans
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 METADATA_PATH = os.path.join(BASE_DIR, "storage", "eo_metadata.json")
+RESULTS_PATH = os.path.join(BASE_DIR, "storage", "eo_results_clustering.json")
 
 
 def load_metadata(path):
@@ -34,23 +37,41 @@ def run_clustering(data, k):
     return data
 
 
-def visualize_clusters(data):
-    scatter = plt.scatter(
-        [item["brightness"] for item in data],
-        [item["contrast"] for item in data],
-        c=[item["cluster"] for item in data],
-        cmap="viridis"
+def visualize_clusters(data, save_path=None):
+    df = pd.DataFrame({
+        "brightness": [item["brightness"] for item in data],
+        "contrast":   [item["contrast"]   for item in data],
+        "cluster":    [item["cluster_meaning"] for item in data],
+    })
+
+    plt.figure(figsize=(9, 6))
+    sns.scatterplot(
+        data=df,
+        x="brightness",
+        y="contrast",
+        hue="cluster",
+        palette={"low_quality": "#d62728", "medium_quality": "#ff7f0e", "high_quality": "#2ca02c"},
+        s=80,
+        alpha=0.8
     )
-    plt.colorbar(scatter, label="Cluster")
+    plt.title("EO Product Clustering (K-means, k=3)", fontsize=14)
     plt.xlabel("Brightness")
     plt.ylabel("Contrast")
-    plt.title("EO Product Clusters")
+    plt.legend(title="Cluster", bbox_to_anchor=(1.05, 1), loc="upper left")
     plt.tight_layout()
+
+    if save_path:
+        plt.savefig(save_path, dpi=150)
+        print(f"Cluster plot saved to {save_path}")
+
     plt.show()
 
 
 def run_clustering_pipeline(k):
-    data = load_metadata(METADATA_PATH)
+    if os.path.exists(RESULTS_PATH):
+        data = load_metadata(RESULTS_PATH)
+    else:
+        data = load_metadata(METADATA_PATH)
     print(f"Loaded {len(data)} products")
 
     data = run_clustering(data, k)
@@ -59,10 +80,10 @@ def run_clustering_pipeline(k):
     for item in data:
         print(f"{item['eo_product_id']} | cluster={item['cluster']}")
 
-    with open(METADATA_PATH, "w") as f:
+    with open(RESULTS_PATH, "w") as f:
         json.dump(data, f, indent=2)
 
-    visualize_clusters(data)
+    visualize_clusters(data, save_path=os.path.join(BASE_DIR, "storage", "cluster_plot.png"))
 
 
 if __name__ == "__main__":
