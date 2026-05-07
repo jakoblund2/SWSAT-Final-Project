@@ -40,6 +40,17 @@
 <hr>
 
 <!-- ========================= -->
+<!-- SYSTEM STATUS -->
+<!-- ========================= -->
+<h2>System Status</h2>
+<p>Total products: {{ total_products }}</p>
+<p>Filtered products: {{ filtered_products }}</p>
+<p>Selected product: {{ selected_product.eo_product_id if selected_product else "None" }}</p>
+<p>Latest timestamp: {{ latest_timestamp }}</p>
+
+<hr>
+
+<!-- ========================= -->
 <!-- PRODUCT LIST -->
 <!-- ========================= -->
 <h2>EO Product List</h2>

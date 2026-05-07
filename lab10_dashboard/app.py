@@ -84,7 +84,9 @@ def get_selected_product(products, selected_id):
 @app.route("/") #API endpoint mapping
 def index():
 
-    products = load_catalog()
+    all_products = load_catalog()
+    total = len(all_products)
+    latest_timestamp = max((p["timestamp"] for p in all_products))
 
     # Read filters from URL
     area_name = request.args.get("area_name", "").strip()
@@ -94,7 +96,7 @@ def index():
 
     # TODO:
     # Apply filtering
-    products = apply_filters(products, area_name, satellite_id, date)
+    products = apply_filters(all_products, area_name, satellite_id, date)
 
     # TODO:
     # Get selected product
@@ -106,7 +108,10 @@ def index():
         selected_product=selected_product,
         area_name=area_name,
         satellite_id=satellite_id,
-        date=date
+        date=date,
+        total_products=total,
+        filtered_products=len(products),
+        latest_timestamp=latest_timestamp,
     )
 
 
