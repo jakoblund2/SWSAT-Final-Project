@@ -127,7 +127,7 @@ def serve_image(eo_product_id):
 
     # TODO:
     # Get archive_path from product
-            archive_path = Path(product["archive_path"])
+            archive_path = Path(product["archive_path"]).resolve()
     # TODO:
     # Convert to Path and check if file exists
             if archive_path.is_file():

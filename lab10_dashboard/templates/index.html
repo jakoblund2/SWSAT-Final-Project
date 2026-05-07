@@ -49,9 +49,11 @@
     <!-- TODO:
          Make this clickable (add selected_id to URL)
     -->
-    {{ product.eo_product_id }} |
-    {{ product.area_name }} |
-    {{ product.timestamp }}
+    <a href="?selected_id={{ product.eo_product_id }}&area_name={{ area_name }}&satellite_id={{ satellite_id }}&date={{ date }}">
+      {{ product.eo_product_id }} |
+      {{ product.area_name }} |
+      {{ product.timestamp }}
+    </a>
   </div>
 {% endfor %}
 
@@ -72,7 +74,7 @@
   <!-- TODO:
        Add more metadata fields
   -->
-
+  <p>Archive Path: {{ selected_product.archive_path }}</p>
 {% else %}
   <p>No product selected</p>
 {% endif %}
@@ -88,6 +90,7 @@
   <!-- TODO:
        Show image using /image/<id>
   -->
+  <img src="/image/{{ selected_product.eo_product_id }}" width="300">
 {% else %}
   <p>No preview available</p>
 {% endif %}
