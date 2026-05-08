@@ -30,11 +30,9 @@ def setup_directories():
     # TODO:
     # Create all directories using mkdir(parents=True, exist_ok=True)
     Path("lab8/object_store/incoming").mkdir(parents=True, exist_ok=True)
-    Path("lab8/object_store/queue").mkdir(parents=True, exist_ok=True)
     Path("lab8/object_store/processed").mkdir(parents=True, exist_ok=True)
     Path("lab8/metadata").mkdir(parents=True, exist_ok=True)
     Path("lab8/logs").mkdir(parents=True, exist_ok=True)
-    pass
 
 
 # =============================
@@ -91,6 +89,7 @@ def ingest_products(products, queue):
         # TODO:
         # Change state to QUEUED
         product["processing_state"] = "QUEUED"
+        (METADATA_DIR / f"{product['eo_product_id']}.json").write_text(json.dumps(product, indent=2))
 
         # TODO:
         # Add product to queue
@@ -113,6 +112,7 @@ def process_product(product):
     # TODO:
     # Update state to PROCESSING
     product["processing_state"] = "PROCESSING"
+    (METADATA_DIR / f"{product['eo_product_id']}.json").write_text(json.dumps(product, indent=2))
 
     print(f"[WORKER] Processing {product['eo_product_id']}")
 
@@ -129,6 +129,7 @@ def process_product(product):
     # TODO:
     # Update state to COMPLETED
     product["processing_state"] = "COMPLETED"
+    (METADATA_DIR / f"{product['eo_product_id']}.json").write_text(json.dumps(product, indent=2))
 
     print(f"[WORKER] Completed {product['eo_product_id']}")
 
