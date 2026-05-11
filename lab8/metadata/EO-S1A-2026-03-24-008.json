@@ -1,0 +1,10 @@
+{
+  "eo_product_id": "EO-S1A-2026-03-24-008",
+  "satellite_id": "Sentinel-1A",
+  "pass_id": "EO-S1A-2026-03-24-008",
+  "timestamp": "2026-03-24T10:25:00Z",
+  "area_name": "Aarhus, Denmark",
+  "file_name": "EO-S1A-2026-03-24-008.png",
+  "size_mb": 50,
+  "processing_state": "COMPLETED"
+}
