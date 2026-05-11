@@ -1,6 +1,7 @@
 #Lab8 Starter Code
 #--------------------------
 import os
+import shutil
 import json
 import time
 from pathlib import Path
@@ -124,7 +125,7 @@ def process_product(product):
     # Hint: use os.rename() or shutil.move()
     src = INCOMING_DIR / product["file_name"]
     dst = PROCESSED_DIR / product["file_name"]
-    os.rename(src, dst)
+    shutil.move(str(src), str(dst))
 
     # TODO:
     # Update state to COMPLETED
