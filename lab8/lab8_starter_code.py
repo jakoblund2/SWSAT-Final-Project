@@ -9,7 +9,7 @@ from pathlib import Path
 # CONFIGURATION
 # =============================
 
-BASE_DIR = Path("lab8") #change to your folder name 
+BASE_DIR = Path(__file__).parent
 INCOMING_DIR = BASE_DIR / "object_store" / "incoming"
 PROCESSED_DIR = BASE_DIR / "object_store" / "processed"
 METADATA_DIR = BASE_DIR / "metadata"
@@ -29,10 +29,10 @@ def setup_directories():
     """
     # TODO:
     # Create all directories using mkdir(parents=True, exist_ok=True)
-    Path("lab8/object_store/incoming").mkdir(parents=True, exist_ok=True)
-    Path("lab8/object_store/processed").mkdir(parents=True, exist_ok=True)
-    Path("lab8/metadata").mkdir(parents=True, exist_ok=True)
-    Path("lab8/logs").mkdir(parents=True, exist_ok=True)
+    INCOMING_DIR.mkdir(parents=True, exist_ok=True)
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    METADATA_DIR.mkdir(parents=True, exist_ok=True)
+    LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # =============================

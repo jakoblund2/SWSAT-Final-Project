@@ -24,8 +24,8 @@ def generate_eo_image(pass_id, date_str, index):
     for _ in range(rng.integers(2, 5)):
         r = rng.integers(20, 200)
         c = rng.integers(water_width, 230)
-        h = rng.integers(20, 50)
-        w = rng.integers(20, 50)
+        h = min(rng.integers(20, 50), 256 - r)
+        w = min(rng.integers(20, 50), 256 - c)
         img[r:r+h, c:c+w] = rng.uniform(190, 240, (h, w))
 
     # Road / river — varying curve

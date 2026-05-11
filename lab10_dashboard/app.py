@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # TODO:
 # Update these paths to match your Lab 9 folders
-CATALOG_DIR = Path("lab9/data/catalog")
-ARCHIVE_DIR = Path("lab9/data/archive")
+CATALOG_DIR = Path(__file__).parent.parent / "lab9" / "data" / "catalog"
+ARCHIVE_DIR = Path(__file__).parent.parent / "lab9" / "data" / "archive"
 
 
 # =========================

@@ -1,10 +1,13 @@
 import json
+from pathlib import Path
 import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from PIL import ImageStat
 from backend.eo_enhancer import enhance_image
 from clustering_processes import run_clustering
+
+BASE_DIR = Path(__file__).parent.parent
 
 def load_metadata(metadata_path):
     """
@@ -42,11 +45,11 @@ def process_eo_product(item):
     """
 
     # 1. Get image path from metadata
-    image_path = item["image_path"]
+    image_path = str(BASE_DIR / item["image_path"])
 
     # 2. Create output path for enhanced image
     eo_id = item["eo_product_id"]
-    enhanced_path = f"storage/object_store/enhanced/{eo_id}-enhanced.png"
+    enhanced_path = str(BASE_DIR / "storage" / "object_store" / "enhanced" / f"{eo_id}-enhanced.png")
 
     # 3. Apply enhancement
     # TODO: call enhancement function (e.g., your ML logic from Lab11)
@@ -146,8 +149,8 @@ def run_pipeline():
     Main pipeline for Lab 12.
     """
 
-    metadata_path = "storage/eo_metadata.json"
-    results_path = "storage/eo_results_clustering.json"
+    metadata_path = BASE_DIR / "storage" / "eo_metadata.json"
+    results_path = BASE_DIR / "storage" / "eo_results_clustering.json"
     k = 3
 
     # 1. Load all EO products
@@ -161,7 +164,7 @@ def run_pipeline():
 
     all_results = []
 
-    with open("logs/pipeline.log", "w") as log_file:
+    with open(BASE_DIR / "logs" / "pipeline.log", "w") as log_file:
 
         # 4. Process batch by batch
         for batch_number, batch in enumerate(batches, start=1):

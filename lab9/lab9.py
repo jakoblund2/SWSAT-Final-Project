@@ -8,7 +8,7 @@ from pathlib import Path
 # CONFIG
 # =============================
 
-BASE_DIR = Path("lab9/data")
+BASE_DIR = Path(__file__).parent / "data"
 INCOMING_DIR = BASE_DIR / "incoming"
 PROCESSED_DIR = BASE_DIR / "processed"
 ARCHIVE_DIR = BASE_DIR / "archive"
